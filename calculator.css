@@ -1,0 +1,58 @@
+.main_div{
+  display: grid;
+  border: 0.5px solid rgb(51, 52, 53);
+  border-radius: 15px;
+  background-color:rgb(96, 171, 247);
+  width: 400px;
+  height: 600px;
+  padding: 25px;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "input input input"
+  "btn1 btn2 btn3"
+  "btn4 btn5 btn6"
+  "btn7 btn8 btn9"
+  "btn0 btn_add btn_subtract"
+  "btn_multiply btn_divide btn_equal"
+  ;
+}
+.main_div > #displayInput{
+  grid-area: input;
+}
+#displayInput{
+  background-color:  rgb(233, 241, 249);
+  border: 0.1px solid rgb(51, 52, 53);
+  border-radius: 10px;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 30px;
+  display: grid;
+  justify-self: center;
+  font-size: 2em;
+}
+#displayInput:focus{
+  outline: none;
+}
+button{
+  box-shadow: 0px 1px 1px rgb(51, 52, 53);
+  background-color: rgb(203, 222, 241);
+  color: rgb(51, 52, 53);
+  font-size: 2em;
+  border-style: none;
+  border-radius: 10px;
+}  
+button:focus{
+  outline: none;
+}
+button:hover{
+  background-color:rgb(232, 238, 247);
+    color: rgb(36, 37, 37);
+  cursor: pointer;
+}
+
